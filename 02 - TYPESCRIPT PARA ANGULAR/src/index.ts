@@ -8,6 +8,7 @@ function printaObjetos(pessoa: hero){
     console.log(pessoa)
 }
 
+//comentario
 printaObjetos({
     name: "Bruce",
     vulgo: "batman",
