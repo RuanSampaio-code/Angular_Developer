@@ -2,6 +2,8 @@
 function printaObjetos(pessoa) {
     console.log(pessoa);
 }
+
+//comentario
 printaObjetos({
     name: "Bruce",
     vulgo: "batman",
