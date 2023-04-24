@@ -1,39 +1,31 @@
-//Tipois primitivos: booleam, number , string
-//froma de declarar:
+/*classes
+classe é um forma de reaproveitar 
+e criar varias coisas igual a seu formato
+*/
 
-let ligado:boolean = false;
-let nome:string = "Ruan";
-let idade:number = 23;
+//estrutura básica de uma class
 
-//funciona tmb com valores decimais
-let altura:number = 1.9;
+class Character{
+    name?: string; //deixando a propriedade name como opcional
+    stregth : number;
+    skill: number;
 
-//tipos especiais
-//null
-//void
-let nulo:null = null;
+    constructor(stregth : number, skill:number){
+        //this se refere a class
+        //this.name = name;
+        this.stregth = stregth;
+        this.skill = skill;
+    }
 
-
-
-
-
-
-
-
-/* type hero ={
-    name: string;
-    vulgo: string;
-
-};
-
-function printaObjetos(pessoa: hero){
-    console.log(pessoa)
+    //metodos
+    attack(): void{
+        console.log(`attack with ${this.stregth} points`)
+    }
 }
 
-//comentario
-printaObjetos({
-    name: "Bruce",
-    vulgo: "batman",
+//criando um personagem com nova instacia da classe charater
+const P1 = new Character(10,20);
 
-})
-console.log('ola mundo'); */
+//imprindio o P1 com seu metodo de ataque!!
+//console.log();
+P1.attack();
