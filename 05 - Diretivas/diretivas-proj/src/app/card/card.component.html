@@ -1,0 +1,42 @@
+<h1>My App</h1>
+<p *ngIf="true">card works!</p>
+<button> Ola mundo </button>
+
+<ul>
+  <li *ngFor="let p of produtos; let i = index"
+
+    (click) = "remover(i)">
+
+    {{i}}-{{p}}
+  </li>
+  <button (click)="adicionar()">Adicionar</button>
+  <button (click)="decrementar()">Apagar</button>
+</ul>
+<hr>
+<div [ngSwitch]="menuType">
+
+  <div *ngSwitchDefault>
+    <ul>
+      <li> editar perfil</li>
+      <li>adicionar carção</li>
+    </ul>
+  </div>
+  <div *ngSwitchCase="'admin'">
+    <ul>
+      <li> editar perfil</li>
+      <li> adicionar cartão</li>
+      <li> gerenciar usuários </li>
+
+    </ul>
+  </div>
+  <div *ngSwitchCase="'superuser'">
+    <ul>
+      <li> editar perfil</li>
+      <li> adicionar cartão</li>
+      <li> gerenciar usuários </li>
+      <li> adicionar admins </li>
+    </ul>
+  </div>
+
+
+</div>
