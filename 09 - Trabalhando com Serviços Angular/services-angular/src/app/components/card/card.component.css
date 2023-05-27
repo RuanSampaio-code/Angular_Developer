@@ -1,0 +1,54 @@
+.card{
+  border: 1px solid black;
+  width: 200px;
+  height: 350px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #232323;
+  border-radius: 15px;
+}
+
+.card_body{
+  background-color: #616161;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70%;
+}
+.card_title{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.card_title >h3{
+  color: wheat;
+
+}
+
+.card_stats
+{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card_stats-type{
+
+  color: white;
+  background-color: rgb(255, 105, 5);
+  padding: 5px;
+  margin-right: 3px;
+  border-radius: 5px;
+
+}
+
+.card_body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
